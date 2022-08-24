@@ -1,1 +1,5 @@
 /*No olvidarse de importar las variables*/
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box; }
