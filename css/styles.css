@@ -20,8 +20,8 @@ header {
     border-bottom: 2px solid rgba(18, 14, 2, 0.9);
     position: sticky; }
     header div nav div a {
-      height: 90%;
-      width: 100%;
+      width: 90%;
+      height: 100%;
       border-style: solid; }
     header div nav div h1 ecbz {
       margin-left: 10px;

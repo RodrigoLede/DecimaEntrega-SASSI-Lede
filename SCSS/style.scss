@@ -4,7 +4,7 @@
 
 @import"Partials/variables";
 @import"Partials/mapas";
-
+@import"Partials/mixin";
 
 
 //Código Principal
@@ -22,28 +22,18 @@ header{
     grid-area: head;
     background-color: $color-header;
     div{
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    margin-left: 5px;
-    grid-template-columns: 0.5fr 3.5fr 3.5fr 0.5fr;
-    gap: 5px;
-    border-bottom:map-get($map:$standar, $key:border-standar);
-    position: sticky;
+        @include header-model;
         nav{
             div{
                 a{
-                    height: 90%;
-                    width: 100%;
-                    border-style: solid;
+                   @include medidas (90%,100%);
+                   border-style: solid;
                 }
                 h1{
                     ecbz{
-                        margin-left: 10px;
-                        font-size: map-get($map:$standar, $key: font-standar);
-                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                        text-align: center; }
+                        @include ecbz-model;
                     }
+                }    
                 div{    
                     ul{
                         list-style-type: none;
